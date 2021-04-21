@@ -1,0 +1,158 @@
+$cMain: #F4D650;
+$cWhite:#FFFFFF;
+$cLightGray:#eeeeee;
+$cBlack:#312a26;
+
+
+// * {
+//     outline: 1px solid red;
+// }
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $cBlack;
+    background-color: $cMain;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $cMain;
+    height: 15%;
+    letter-spacing: 2px;
+
+
+    &__inner {
+        float: right;
+    }
+
+    &__item {
+        float: left;
+        padding: 15px 25px;
+        font-size: 2em;
+
+        &>a {
+            display: block;
+            text-decoration: none;
+            color: $cWhite;
+        }
+
+        &:hover {
+            background-color: $cWhite;
+
+            &>a {
+                color: $cMain;
+                text-decoration: underline solid 2px;
+            }
+        }
+    }
+
+    &__title {
+        float: left;
+        padding: 18px 0 0 15px;
+        font-size: 2em;
+
+        &>a {
+            display: block;
+            text-decoration: none;
+            color: $cWhite;
+        }
+    }
+
+}
+
+
+
+.main-wrap {
+    background-color: $cWhite;
+    border: solid 2px $cLightGray;
+    margin: 3% auto;
+    text-align: center;
+    line-height: 200%;
+    width: 50%;
+    padding-bottom: 5%;
+
+    box-shadow: 7px 7px $cBlack;
+
+
+    & input {
+        width: 50%;
+        height: 30px;
+
+        outline: none;
+        border: none;
+        border-bottom: solid 3px $cBlack;
+    }
+
+    & select {
+        width: 50%;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-bottom: solid 3px $cBlack;
+
+
+    }
+
+    & textarea {
+        width: 50%;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-bottom: solid 3px $cBlack;
+    }
+
+    & h1 {
+        margin: 0 auto 5%;
+        text-align: center;
+        padding-top: 5%;
+        font-family: 'Teko', sans-serif;
+
+    }
+
+    & h2 {
+        margin-top: 10%;
+        font-family: 'Teko', sans-serif;
+    }
+
+
+    & .button {
+        display: block;
+        margin: 10% auto;
+        width: 50%;
+        height: 50%;
+        margin-bottom: 2%;
+        cursor: pointer;
+        font-size: 2vw;
+        border-radius: 20px;
+        letter-spacing: .5em;
+        border: none;
+        background-color: $cBlack;
+        color: $cWhite;
+        box-shadow: 3px 4px 1px #C0C0C0;
+        font-family: 'Teko', sans-serif;
+        outline: none;
+
+        &:hover {
+            box-shadow: none;
+            transform: translateX(3px) translateY(4px);
+            text-shadow: 4px 0 0 $cBlack;
+            background-color: #A9A9A9;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @import 'mobileform.scss';
+  }

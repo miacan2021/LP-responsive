@@ -1,0 +1,16 @@
+$cMain: #F4D650;
+$cWhite:#FFFFFF;
+$cLightGray:#eeeeee;
+$cBlack:#312a26;
+
+body{
+    background-color: $cMain;
+    background-image: url(Images/mobile.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+video {
+    display: none;
+}

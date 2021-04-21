@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>KidsActivity.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Teko:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar clearfix">
+            <ul class="nav">
+                <li class="nav__title"><a href="">KidsActivity.com</a></li>
+                <div class="nav__inner">
+                    <li class="nav__item"><a href="#about">About</a></li>
+                    <li class="nav__item"><a href="#act">Activities</a></li>
+                    <li class="nav__item"><a href="#apply">Apply</a></li>
+
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">
+
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile__inner">
+                <li class="mobile__item"><a href="#about"
+                        onclick="document.querySelector('.mobile-nav').classList.remove('open')">About</a></li>
+                <li class="mobile__item"><a href="#act"
+                        onclick="document.querySelector('.mobile-nav').classList.remove('open')">Activities</a></li>
+                <li class="mobile__item"><a href="#apply"
+                        onclick="document.querySelector('.mobile-nav').classList.remove('open')">Apply</a></li>
+                <li class="mobile__item"><a href="#"
+                        onclick="document.querySelector('.mobile-nav').classList.remove('open')">Close</a></li>
+            </ul>
+        </nav>
+        <div class="video-wrap">
+            <div class="video-title">
+                <p>Educational<br>activity<br>for<br>kids!</p>
+            </div>
+            <video src="Videos/main.mp4" poster="Images/top.png" width="100%" height="auto" muted autoplay loop></video>
+        </div>
+        <div class="description">
+            <h1>
+                Would you like to get your child involved in educational activities?
+            </h1>
+            <div class="detail">
+                <p class="detail__item">
+                    We're offering a free children's activity class on <br><span>3/9!</span>
+                    <br>
+                    We offer three activity classes:
+                    <br>
+                    art, science, and movement.
+                    <br>
+                    Children must be between the ages of 6 and 12 to participate.
+                </p>
+                <img class="detail__item" src="Images/what.jpg" alt="">
+            </div>
+        </div>
+        <div id="act">
+            <div class="act__title">
+                <h1>Activities</h1>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <a href="#">
+                        <img class="card__img" src="Images/art.jpg" alt="">
+                        <h2 class="card__title">Art</h2>
+                        <p class="card__p">There are classes such as drawing on a large piece of paper together and arts
+                            and crafts using cardboard.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img class="card__img" src="Images/science.jpg" alt="">
+                        <h2 class="card__title">Sience</h2>
+                        <p class="card__p">There are many educational activities such as sun and plant observation and
+                            fossil viewing classes.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img class="card__img" src="Images/exe.jpg" alt="">
+                        <h2 class="card__title">Exercise</h2>
+                        <p class="card__p">Through physical games, the children will develop their motor and social
+                            skills.</p>
+                    </a>
+                </div>
+
+            </div>
+            <div id="about">
+                <div class="about__title">
+                    <h1>About us</h1>
+                </div>
+                <div class="about">
+                    <img class="img1" src="Images/about1.jpg" alt="">
+                    <img class="img2" src="Images/about2.jpg" alt="" width="30%">
+                    <img class="img3" src="Images/about3.jpg" alt="" width="15%">
+                    <div class="about__p">
+                        <p>We offer free activity classes for kids.
+                            The instructors of the classes are students majoring in education.
+                            The content of the activities is designed by us from scratch, and we watch the
+                            children's reactions to the activities to help us think about good education.</p>
+                    </div>
+                    <div class="about__inner"></div>
+                </div>
+
+
+
+            </div>
+            <div id="apply">
+                <div class="how__title">
+                    <h1>How to join</h1>
+                </div>
+                <div class="flow">
+                    <div class="flow__item">
+                        <div class="round">
+                            <div class="round__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 class="flow__item__title">Select Activity</h2>
+                        <p class="flow__item__p">Please choose from the list.</p>
+                    </div>
+                    <div class="flow__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevrons-right">
+                            <polyline points="13 17 18 12 13 7"></polyline>
+                            <polyline points="6 17 11 12 6 7"></polyline>
+                        </svg>
+                    </div>
+                    <div class="mobile-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevrons-down">
+                            <polyline points="7 13 12 18 17 13"></polyline>
+                            <polyline points="7 6 12 11 17 6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flow__item">
+                        <div class="round">
+                            <div class="round__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-send">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 class="flow__item__title">Apply</h2>
+                        <p class="flow__item__p">Click on the Apply button below, complete the form and click "Submit".
+                        </p>
+                    </div>
+                    <div class="flow__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vw" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevrons-right">
+                            <polyline points="13 17 18 12 13 7"></polyline>
+                            <polyline points="6 17 11 12 6 7"></polyline>
+                        </svg>
+                    </div>
+                    <div class="mobile-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevrons-down">
+                            <polyline points="7 13 12 18 17 13"></polyline>
+                            <polyline points="7 6 12 11 17 6"></polyline>
+                        </svg>
+                    </div>
+
+                    <div class="flow__item">
+                        <div class="round">
+                            <div class="round__item">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-kid"
+                                    width="4vw" height="4vw" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <circle cx="12" cy="12" r="9" />
+                                    <line x1="9" y1="10" x2="9.01" y2="10" />
+                                    <line x1="15" y1="10" x2="15.01" y2="10" />
+                                    <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+                                    <path d="M12 3a2 2 0 0 0 0 4" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <h2 class="flow__item__title">Join</h2>
+                        <p class="flow__item__p">Please come directly to the venue with your kids.</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn" href="form.html">
+                <button>Apply</button>
+            </a>
+        </div>
+        <footer>
+            <small>&copy;Shiho Kazama</small>
+        </footer>
+</body>
+
+</html>

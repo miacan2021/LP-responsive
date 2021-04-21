@@ -1,0 +1,31 @@
+header {
+  display: none;
+}
+
+.main-wrap {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  -webkit-box-shadow: 7px 7px #312a26;
+          box-shadow: 7px 7px #312a26;
+}
+
+.main-wrap input {
+  width: 90%;
+}
+
+.main-wrap input.button {
+  margin: 20px auto;
+  height: 70px;
+  width: 200px;
+  font-size: 30px;
+}
+
+.main-wrap select {
+  width: 90%;
+}
+
+.main-wrap textarea {
+  width: 90%;
+}
+/*# sourceMappingURL=mobileform.css.map */

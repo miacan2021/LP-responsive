@@ -1,0 +1,38 @@
+$cMain: #F4D650;
+$cWhite:#FFFFFF;
+$cLightGray:#eeeeee;
+$cBlack:#312a26;
+
+header {
+    display: none;
+}
+
+
+.main-wrap {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    box-shadow: 7px 7px $cBlack;
+
+
+    & input {
+        width: 90%;
+        &.button {
+            margin: 20px auto;
+                height: 70px;
+                width: 200px;
+                font-size: 30px;
+                
+        }
+    
+    }
+
+    & select {
+        width: 90%;
+    }
+
+    & textarea {
+        width: 90%;
+    }
+}
+

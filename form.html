@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Teko:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="nav__title"><a href="index.html">KidsActivity.com</a></li>
+                <div class="nav__inner">
+                    <li class="nav__item"><a href="#submit">Submit</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-wrap">
+            <h1>Application Form</h1>
+            <h2>Child’s info</h2>
+            <form action="thanks.html">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Name"><br><br>
+                <label for="age">Age</label><br>
+                <select name="age"><br><br>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9</option>
+                    <option value="5">10</option>
+                    <option value="6">11</option>
+                    <option value="7">12</option>
+                </select><br><br>
+                <label for="act">Choose a field to participate in.</label><br>
+                <select name="act"><br>
+                    <option value="1">Art</option>
+                    <option value="2">Science</option>
+                    <option value="3">Exercise</option>
+                </select>
+
+
+
+                <h2>Parent info</h2>
+
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Name"><br><br>
+                <label for="ad">Adress</label><br>
+                <input type="text" id="ad" placeholder="Adress"><br><br>
+                <label for="tel">Tel</label><br>
+                <input type="text" id="tel" placeholder="Tel"><br><br>
+                <label for="mail">Email Adress</label><br>
+                <input type="email" id="mail" placeholder="email"><br><br>
+                <label for="remarks">Remarks column</label><br>
+                <textarea name="textarea" id="remarks" placeholder="Remarks column"></textarea><br><br>
+                <input type="submit" value="submit" class="button" id="submit">
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAA;EACA,gBAAgB,EANZ,OAAO;EAOX,gBAAgB,EAAE,sBAAsB;EACxC,iBAAiB,EAAE,SAAS;EAC5B,qBAAqB,EAAE,KAAK;EAC5B,mBAAmB,EAAE,aAAa;EAClC,eAAe,EAAE,KAAK;CACzB;;AACD,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "mobilethanks.scss"
+    ],
+    "names": [],
+    "file": "mobilethanks.css"
+}

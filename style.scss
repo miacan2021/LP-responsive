@@ -1,0 +1,376 @@
+$cMain: #F4D650;
+$cWhite:#FFFFFF;
+$cLightGray:#eeeeee;
+$cBlack:#312a26;
+
+
+
+// * {
+//     outline: 1px solid red;
+// }
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $cBlack;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.nav {
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $cMain;
+    height: 15%;
+    letter-spacing: 2px;
+
+
+    &__inner {
+        float: right;
+    }
+
+    &__item {
+        float: left;
+        padding: 15px 25px;
+        font-size: 2em;
+
+        &>a {
+            display: block;
+            text-decoration: none;
+            color: $cWhite;
+        }
+
+        &:hover {
+            background-color: $cWhite;
+
+            &>a {
+                color: $cMain;
+                text-decoration: underline solid 2px;
+            }
+        }
+    }
+
+    &__title {
+        float: left;
+        padding: 18px 0 0 15px;
+        font-size: 2em;
+
+        &>a {
+            display: block;
+            text-decoration: none;
+            color: $cWhite;
+        }
+    }
+
+}
+
+
+
+.video-wrap {
+    position: relative;
+    background-color: $cMain;
+    z-index: -100;
+
+}
+
+.video-title {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Teko', sans-serif;
+    left: 72%;
+    top: 18%;
+    font-size: 6vw;
+    color: $cMain;
+    text-shadow: 4px 0 $cLightGray;
+}
+
+.description {
+    height: 600px;
+    background-color: $cMain;
+    text-align: center;
+
+    &>h1 {
+        font-family: 'Teko', sans-serif;
+        margin-top: 0;
+        padding-top: 50px;
+        font-size: 4vw;
+    }
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+
+
+    &__item {
+        grid-row: 1fr 1fr;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 30vw;
+    }
+
+    p {
+        font-size: 2em;
+        line-height: 1.5em;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & span {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px 30px;
+    margin: auto 0;
+    text-align: start;
+}
+
+.act__title {
+    padding: 100px 0 0 60px;
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 342px;
+    margin: 0 auto;
+    background-color: $cLightGray;
+    border: solid 3px $cLightGray;
+
+    &:hover {
+        background-color: $cWhite;
+        box-shadow: 3px 3px 8px 1px #C0C0C0;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+
+    &__title {
+        margin-top: 30px;
+        color: $cBlack;
+        font-size: 3em;
+        line-height: 1.2;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'Teko', sans-serif;
+    }
+
+    &__p {
+        margin: 30px auto;
+        color: $cBlack;
+        font-size: 1.5em;
+        line-height: 1.5;
+        width: 80%;
+
+    }
+}
+
+.about__title {
+    padding: 100px 0 0 60px;
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+}
+
+.about {
+    height: 600px;
+    position: relative;
+    width: 100%;
+
+
+    &__p {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        height: 80%;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+        overflow: scroll;
+        font-size: 2em;
+        width: 40%;
+        overflow: scroll;
+        overflow-x: hidden;
+
+    }
+
+    & .img1 {
+        top: 0;
+        right: 1%;
+        width: 20%;
+        position: absolute;
+
+    }
+
+    & .img2 {
+        position: absolute;
+        top: 3%;
+        right: 25%;
+    }
+
+    & .img3 {
+        position: absolute;
+        top: 65%;
+        right: 30%;
+    }
+
+    &__inner {
+        position: absolute;
+        background-color: $cMain;
+        top: 10%;
+        width: 100%;
+        bottom: 10%;
+        z-index: -50;
+    }
+
+}
+
+.how__title {
+    padding: 100px 0 0 60px;
+    font-size: 2vw;
+    font-family: 'Teko', sans-serif;
+
+}
+
+.flow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 30px;
+    margin: 0 auto;
+    text-align: start;
+    width: 80%;
+
+    &__item {
+        width: 100%;
+        max-width: 342px;
+        margin: 0 auto;
+
+
+        & .round {
+            position: relative;
+            height: 15vw;
+            width: 15vw;
+            border-radius: 50%;
+            background-color: $cMain;
+            margin: 0 auto;
+
+            &__item {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+
+                & svg {
+                    background-color: $cWhite;
+                }
+            }
+
+        }
+
+        &__title {
+            margin-top: 30px;
+            color: $cBlack;
+            font-size: 2vw;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            text-align: center;
+            font-family: 'Teko', sans-serif;
+        }
+
+        &__p {
+            margin: 30px auto;
+            color: $cBlack;
+            font-size: 1.5vw;
+            line-height: 1.5;
+            width: 80%;
+            text-align: center;
+
+        }
+    }
+
+    &__arrow {
+        margin: auto;
+    }
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    margin: 70px 0;
+
+    & button {
+        height: 7vw;
+        width: 25vw;
+        font-size: 2vw;
+        letter-spacing: .5em;
+        border-radius: 15px;
+        border: none;
+        background-color: $cMain;
+        color: $cWhite;
+        box-shadow: 3px 4px 1px #C0C0C0;
+        font-family: 'Teko', sans-serif;
+        outline: none;
+
+        &:hover {
+            box-shadow: none;
+            transform: translateX(3px) translateY(4px);
+            text-shadow: 4px 0 0 $cBlack;
+            font-weight: bold;
+            background-color: #A9A9A9;
+            border: solid 2px $cMain;
+        }
+    }
+}
+
+footer {
+    height: 30%;
+    background-color: $cLightGray;
+    text-align: center;
+    color: $cBlack;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-arrow {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    @import 'mobile.scss';
+}
